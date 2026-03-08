@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Legal & Support — My Site</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="/">My Site</a></h1>
+      <nav>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Legal & Support</h2>
+    <p>Welcome. This site hosts the legal and support pages for embedding in your app (privacy, terms, FAQ, contact, support).</p>
+
+    <ul class="cards">
+      <li><a href="/privacy.html">Privacy Policy</a></li>
+      <li><a href="/terms.html">Terms of Service</a></li>
+      <li><a href="/faq.html">Frequently Asked Questions</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/support.html">Support</a></li>
+    </ul>
+
+    <section>
+      <h3>How to use these pages in your app</h3>
+      <ol>
+        <li>Publish this repository to GitHub and enable GitHub Pages from the main branch (or gh-pages branch).</li>
+        <li>Use the published URLs (for example: https://your-username.github.io/your-repo/privacy.html) inside your app for links to privacy, terms, support, etc.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> My Site</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
