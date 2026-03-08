@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Support — Example App</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Example App</h1>
+      <nav class="main-nav">
+        <a href="/index.html">Home</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/data.html">Data Collection</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="content">
+      <h2>Contact Support</h2>
+      <p>If you need help, you can email us directly or use the form below.</p>
+
+      <h3>Email</h3>
+      <p><a href="mailto:support@example.com">support@example.com</a></p>
+
+      <h3>Quick contact form</h3>
+      <p>Note: this form requires a form backend (Formspree or similar). The form below will try to open your email client as a fallback.</p>
+
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="button">Send</button>
+      </form>
+
+      <h4>To enable hosted form handling</h4>
+      <p>Use a service like Formspree (https://formspree.io) or Netlify Forms and update the form action. See README for details.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year6"></span> Example App.</small>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
