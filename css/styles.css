@@ -13,3 +13,25 @@ nav a{margin-left:1rem;color:var(--accent);text-decoration:none}
 .cards li{background:var(--card);padding:1rem;border-radius:8px;min-width:180px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
 .site-footer{margin-top:3rem;padding:1rem 0;text-align:center;color:var(--muted)}
 @media (max-width:600px){.site-header .container{flex-direction:column;align-items:flex-start}nav{margin-top:.5rem}}
+
+/* Hero and feature styles for homepage */
+.hero{background:linear-gradient(180deg, #ffffff 0%, #f3f6ff 100%);padding:4rem 0;border-bottom:1px solid #e9eef8}
+.hero-content{display:flex;align-items:center;gap:2rem}
+.hero-text{flex:1}
+.hero-text h1{font-size:2rem;margin:0 0 .5rem}
+.lead{color:#111;font-size:1.05rem;margin:0 0 1rem}
+.hero-illustration{width:360px;flex-shrink:0}
+.cta-row{margin-top:1rem}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;border:1px solid rgba(11,92,255,0.12);background:transparent;color:var(--accent);text-decoration:none;font-weight:600;margin-right:.5rem}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(11,92,255,0.12)}
+
+.features h2{margin-top:0}
+.muted{color:var(--muted)}
+.small{font-size:.95rem}
+.feature-list{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.25rem;padding:0;list-style:none}
+.feature-card{background:var(--card);padding:1.25rem;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,.04);min-height:140px}
+.feature-card h3{margin:0 0 .5rem;font-size:1.05rem}
+.feature-card p{margin:0;color:#333}
+
+@media (max-width:900px){.feature-list{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.hero-content{flex-direction:column}.hero-illustration{width:100%}.feature-list{grid-template-columns:1fr}}
