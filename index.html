@@ -4,18 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Legal & Support — My Site</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1><a href="/">My Site</a></h1>
+      <h1><a href="index.html">My Site</a></h1>
       <nav>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="support.html">Support</a>
       </nav>
     </div>
   </header>
@@ -25,19 +25,38 @@
     <p>Welcome. This site hosts the legal and support pages for embedding in your app (privacy, terms, FAQ, contact, support).</p>
 
     <ul class="cards">
-      <li><a href="/privacy.html">Privacy Policy</a></li>
-      <li><a href="/terms.html">Terms of Service</a></li>
-      <li><a href="/faq.html">Frequently Asked Questions</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li><a href="faq.html">Frequently Asked Questions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="support.html">Support</a></li>
     </ul>
 
     <section>
       <h3>How to use these pages in your app</h3>
+      <p>Publish this folder as a GitHub repository and enable GitHub Pages; then use the published URLs in your app for links to Privacy, Terms, FAQ, Contact and Support pages.</p>
+
       <ol>
-        <li>Publish this repository to GitHub and enable GitHub Pages from the main branch (or gh-pages branch).</li>
-        <li>Use the published URLs (for example: https://your-username.github.io/your-repo/privacy.html) inside your app for links to privacy, terms, support, etc.</li>
+        <li>Create a GitHub repository and push the contents of this folder to the repository root (main branch).</li>
+        <li>In GitHub: go to Settings → Pages, select the branch (e.g. <code>main</code>) and root (/) as the source, then Save. Wait a few minutes for the site to publish.</li>
+        <li>Add the published URLs into your app. Example URLs (replace placeholders):
+          <ul>
+            <li>Privacy: <a href="https://your-username.github.io/your-repo/privacy.html">https://your-username.github.io/your-repo/privacy.html</a></li>
+            <li>Terms: <a href="https://your-username.github.io/your-repo/terms.html">https://your-username.github.io/your-repo/terms.html</a></li>
+            <li>FAQ: <a href="https://your-username.github.io/your-repo/faq.html">https://your-username.github.io/your-repo/faq.html</a></li>
+            <li>Contact: <a href="https://your-username.github.io/your-repo/contact.html">https://your-username.github.io/your-repo/contact.html</a></li>
+            <li>Support: <a href="https://your-username.github.io/your-repo/support.html">https://your-username.github.io/your-repo/support.html</a></li>
+          </ul>
+        </li>
       </ol>
+
+      <p>Notes:
+        <ul>
+          <li>If you prefer a separate branch, you can publish from a <code>gh-pages</code> branch instead of <code>main</code>.</li>
+          <li>Use a custom domain by adding a <code>CNAME</code> file with your domain and configuring DNS records; see GitHub Pages docs for details.</li>
+          <li>After publishing, test each URL and update the links in your app to point to the stable published addresses.</li>
+        </ul>
+      </p>
     </section>
   </main>
 
